@@ -102,7 +102,7 @@ This demonstrates how optimisation models can effectively support structured dec
 ---
 ## Model Structure
 
-![Model Structure](images/model-structure.png)
+![Model Structure](https://github.com/Olafare-analytics/module-selection-optimization/blob/main/images/model-structure.png?raw=true)
 
 The optimisation model was implemented in Microsoft Excel using a matrix of binary decision variables representing module selections across time slots.
 
