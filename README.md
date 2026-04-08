@@ -1,2 +1,133 @@
-# module-selection-optimization
-Optimisation of academic module selection using Binary Integer Programming and Excel Solver to maximise satisfaction under scheduling constraints.
+# Module Selection Optimisation Using Binary Integer Programming
+
+## Project Overview
+
+Academic planning often requires students to select modules while satisfying programme requirements and timetable constraints. Manual decision-making can become difficult when multiple restrictions and preferences exist simultaneously.
+
+This project demonstrates how **Binary Integer Programming (BIP)** can be applied to optimise module selection while maximising student satisfaction.
+
+The model was implemented using **Microsoft Excel Solver**, providing an analytical approach to decision-making under constraints.
+
+---
+
+## Problem Statement
+
+Sophie, a final-year Finance student, must select **five modules** for the academic year while satisfying several requirements:
+
+• Two compulsory modules must be taken  
+• One industry module must be selected  
+• Two finance optional modules must be chosen  
+• No timetable conflicts are allowed  
+
+In addition, Sophie has preference ratings for modules based on:
+
+- interest in module content  
+- lecturer effectiveness  
+- schedule convenience  
+
+The objective is therefore to **maximise total satisfaction while respecting all academic and scheduling constraints**.
+
+---
+
+## Optimisation Method
+
+The problem was formulated as a **Binary Integer Programming model**.
+
+Binary decision variables were used:
+
+xij = 1 if module j is selected in time slot i  
+xij = 0 otherwise
+
+### Objective Function
+
+Maximise total satisfaction:
+
+Max Z = ΣΣ Rij xij
+
+Where Rij represents Sophie’s preference rating for a module at a specific time slot.
+
+---
+
+## Model Constraints
+
+The optimisation model includes the following constraints:
+
+1. Exactly five modules must be selected  
+2. Two compulsory modules must be taken  
+3. Exactly one industry module must be selected  
+4. Exactly two finance optional modules must be chosen  
+5. No more than one module per time slot  
+6. A module cannot be selected more than once  
+7. Overlapping time slots cannot be chosen simultaneously  
+
+These constraints ensure the solution is both **optimal and feasible**.
+
+---
+
+## Implementation
+
+The model was implemented using **Microsoft Excel Solver**.
+
+Key steps included:
+
+• Structuring the decision variable matrix  
+• Creating a preference rating matrix  
+• Implementing the objective function using the SUMPRODUCT function  
+• Encoding all academic and scheduling constraints in Solver  
+
+Solver used integer optimisation techniques to search for the best feasible combination of modules.
+
+---
+
+## Results
+
+The optimisation produced an optimal satisfaction score of:
+
+**Z = 19.5**
+
+The final solution satisfied all constraints:
+
+• Exactly five modules selected  
+• Mandatory modules included  
+• One industry module selected  
+• Two finance optional modules selected  
+• No timetable conflicts  
+
+This demonstrates how optimisation models can effectively support structured decision-making.
+
+---
+
+## Key Insights
+
+This project highlights several important insights:
+
+• optimisation models provide systematic decision support  
+• real-world constraints often reduce theoretical optimal values  
+• careful constraint design is critical for realistic solutions  
+
+The final solution balanced **optimality with feasibility**, illustrating the practical value of Operations Research techniques.
+
+---
+
+## Tools Used
+
+• Microsoft Excel  
+• Excel Solver  
+• Binary Integer Programming  
+
+---
+
+## Possible Extensions
+
+Future improvements to the model could include:
+
+• multi-objective optimisation  
+• workload balancing across semesters  
+• implementation in Python using optimisation libraries such as PuLP or Pyomo  
+
+---
+
+## Author
+
+Olafare Sikiru Olaniyi  
+Operations Research & Data Analytics
