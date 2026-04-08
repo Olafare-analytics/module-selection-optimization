@@ -96,6 +96,35 @@ The final solution satisfied all constraints:
 This demonstrates how optimisation models can effectively support structured decision-making.
 
 ---
+## Model Structure
+
+![Model Structure](images/model-structure.png)
+
+The optimisation model was implemented in Microsoft Excel using a matrix of binary decision variables representing module selections across time slots.
+
+---
+
+## Solver Configuration
+
+![Solver Setup](images/solver-setup.png)
+
+Excel Solver was configured to maximise the objective function while enforcing all academic and scheduling constraints.
+
+---
+
+## Final Optimised Solution
+
+![Final Result](images/final-result.png)
+
+The solver produced an optimal satisfaction score of **Z = 19.5**, satisfying all constraints including mandatory modules and timetable feasibility.
+
+---
+
+## Initial Model Result (Before Adding Overlap Constraints)
+
+![Initial Result](images/initial-result.png)
+
+The initial solution produced a higher score of **Z = 19.8**, but it contained timetable conflicts. Additional constraints were introduced to ensure a realistic and feasible solution.
 
 ## Key Insights
 
