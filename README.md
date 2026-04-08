@@ -1,4 +1,8 @@
 # Module Selection Optimisation Using Binary Integer Programming
+![Operations Research](https://img.shields.io/badge/Field-Operations%20Research-blue)
+![Optimization](https://img.shields.io/badge/Method-Binary%20Integer%20Programming-green)
+![Tool](https://img.shields.io/badge/Tool-Excel%20Solver-orange)
+![Status](https://img.shields.io/badge/Project-Academic%20Case%20Study-purple)
 
 ## Project Overview
 
@@ -144,6 +148,14 @@ The final solution balanced **optimality with feasibility**, illustrating the pr
 • Excel Solver  
 • Binary Integer Programming  
 
+## Skills Demonstrated
+
+- Mathematical Optimisation
+- Binary Integer Programming
+- Operations Research Modelling
+- Decision Analytics
+- Excel Solver Implementation
+- Constraint Modelling
 ---
 
 ## Possible Extensions
@@ -155,6 +167,7 @@ Future improvements to the model could include:
 • implementation in Python using optimisation libraries such as PuLP or Pyomo  
 
 ---
+## Repository Structure
 
 ## Author
 
